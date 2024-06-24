@@ -25,8 +25,8 @@ const Clock = () => {
 
     return (
         <div style={clockStyle}>
-            <h2 >Time zone</h2>
-            <p>{timeString} IST</p>
+  <h2 style={{ margin: '0' }}>Time zone</h2>
+  <p style={{ margin: '0' }}>{timeString} IST</p>
         </div>
     );
 };
