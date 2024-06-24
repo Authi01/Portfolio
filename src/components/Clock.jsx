@@ -19,12 +19,13 @@ const Clock = () => {
         padding: '20px',
         borderRadius: '10px',
         textAlign: 'center',
-        fontSize: '2rem'
+        fontSize: '2rem',
+        margin:'0px'
     };
 
     return (
         <div style={clockStyle}>
-            <h2>Time zone</h2>
+            <h2 >Time zone</h2>
             <p>{timeString} IST</p>
         </div>
     );
