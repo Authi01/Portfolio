@@ -2,88 +2,89 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Clock from '../components/Clock.jsx';
-import SocialLinks from '../components/SocialLinks.astro';
-import ContactMe from '../components/ContactMe.astro';
-import Hobbies from '../components/Hobbies.astro';
-import TechStacks from '../components/TechStacks.astro';
+import SocialLinks from '../components/SocialLinks.astro'
+import ContactMe from '../components/ContactMe.astro'
+import Hobbies from '../components/Hobbies.astro'
+import TechStacks from '../components/TechStacks.astro'
+
 
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
+
 		<!-- Header Section -->
-		<div style="display: flex; align-items: center; justify-content: center;">
-			<p style="font-size: 95px; margin-top: 10px; margin-bottom: 0px;">
-				<span class="text-gradient">Welcome!</span>
-			</p>
+		<div style="display: flex;align-items: center;justify-content: center;">
+			<p  style="font-size: 95px; margin-top: 10px;margin-bottom: 0px;"> <span class="text-gradient">Welcome!</span></p>
 			<img src="/astronaut.gif" />
 		</div>
 
 		<!-- Body Section -->
-		<div style="display: flex; flex-wrap: wrap; width: 100%;">
-			<!-- Column 1 - 70% -->
-			<div style="width: 70%;" class="full-width">
+		<div  style="display:flex; width:100%;">
+			<!-- Column 1 - 70%  -->
+			<div style=" width: 70%;" class="full-width">
 				<!-- Introduction Card -->
-				<div style="width: 100%; margin-bottom: 20px; display: flex;" class="instructions1">
+				<div style="width: 100%;margin-bottom: 20px; display:flex" class="instructions1 ">
 					<div>
 						<!-- Intro -->
 						<div>
-							Hi, I'm <span style="color: #FE7778;">Authiselvi</span>, a <strong>software
-								developer</strong> with a strong focus on user experience, testing, and full stack
-							development.
+							Hi, I'm  <span style="color: #FE7778;">Authiselvi</span> a <strong>software
+						    developer</strong> with a strong focus on user experience, testing and full stack
+							developemnt.
 						</div>
 						<!-- Social -->
 						<SocialLinks />
 					</div>
 					<!-- Gif -->
-					<div style="padding-left: 10px;">
-						<img src="/computer.gif" style="width: 340px;" />
+					<div style="padding-left: 10px;" >
+						<img src="/computer.gif" style="width:340px"  />
 					</div>
 				</div>
-
-				<!-- Additional Content -->
-				<div style="width: 100%; display: flex; flex-wrap: wrap;">
+			
+				  
+				<!--  -->
+				<div style="width: 100%;display:flex;">
 					<!-- Inner column 1 - contact me -->
 					<ContactMe />
-					<!-- Inner column 2 -->
-					<div style="width: 60%; margin-left: 20px;" class="full-width">
-						<!-- Row 1 - Clock -->
-						<div class="instructions1" style="margin-left: 0px; margin-bottom: 20px;">
+					<!-- Inner column 2  -->
+					<div style="width: 60%;margin-left: 20px;" class="full-width">
+						<!-- row 1 - Clock -->
+						<div class="instructions1" style="margin-left: 0px;margin-bottom: 20px;">
 							<Clock />
 						</div>
-						<!-- Row 2 - Hobbies -->
-						<div style="display: flex; flex-wrap: wrap;">
+						<!-- row 2 - Hobbies -->
+						<div style="display:flex">
 							<Hobbies />
-							<div class="instructions1" style="margin-bottom: 20px; margin-left: 20px; width: 65%;">
+							<div class="instructions1" style="margin-bottom: 20px;margin-left: 20px;width:65%">
 								<span> When not coding, I explore the latest tech advancements and indulge in collecting
 									rare stamps <i class="fas fa-stamp icon" style="color:#FE7778;"></i> and coins <i
 										class="fas fa-coins icon" style="color:#FE7778;"></i> from different countries.
 								</span>
 							</div>
 						</div>
-						<!-- Row 3 - Current -->
+						<!-- row 3 - Current -->
 						<div class="instructions1" style="margin-left: 0px;">
 							Currently Working on, <span style="color: #FE7778;">HTML Email Template</span> <br>
-							Currently Working at, <span style="color: #FE7778;">Bounteous India</span>
+							Currently Working at,<span style="color:#FE7778;"> Bounteous India </span>
 						</div>
 					</div>
 				</div>
 			</div>
 			<!-- Outer Column 2 - 30% width -->
-			<div style="width: 30%;" class="full-width">
+			<div style=" width: 30%;" class="full-width">
 				<!-- Techstacks -->
-				<div style="display: flex; margin-left: 20px;" class="instructions2">
+				<div style="display: flex; margin-left: 20px;width: 100%;" class="instructions2">
 					<TechStacks />
 				</div>
 				<!-- Crafted -->
-				<div style="display: flex; margin-left: 20px; margin-top: 20px;">
+				<div style="display: flex; margin-left: 20px;margin-top: 20px;width: 100%;">
 					<Card href="" title="" body="Crafted with ❤️ using Astro by Authiselvi" />
 				</div>
 			</div>
+
 		</div>
 	</main>
 </Layout>
-
 <style>
 	main {
 		margin: auto;
@@ -95,6 +96,7 @@ import TechStacks from '../components/TechStacks.astro';
 		line-height: 1.6;
 	}
 
+	
 	.astro-a {
 		position: absolute;
 		top: -32px;
@@ -104,14 +106,13 @@ import TechStacks from '../components/TechStacks.astro';
 		height: auto;
 		z-index: -1;
 	}
-
 	h1 {
 		font-size: 4rem;
 		font-weight: 700;
 		line-height: 1;
 		text-align: center;
+		
 	}
-
 	.text-gradient {
 		background-image: var(--accent-gradient);
 		-webkit-background-clip: text;
@@ -119,24 +120,35 @@ import TechStacks from '../components/TechStacks.astro';
 		background-size: 400%;
 		background-position: 0%;
 	}
+	
+   .instructions1 {
+    border: 1px solid rgba(var(--accent-light), 25%);
+    background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
+    padding: 1.5rem;
+    border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
 
-	.instructions1,
-	.instructions2 {
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-		transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-	}
+.instructions1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-color: orangered;
+}
+.instructions2 {
+    border: 1px solid rgba(var(--accent-light), 25%);
+    background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
+    padding: 1.5rem;
+    border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
 
-	.instructions1:hover,
-	.instructions2:hover {
-		transform: scale(1.05);
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-		border-color: orangered;
-	}
-
+.instructions2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-color: orangered;
+}
 	.instructions code {
 		font-size: 0.8em;
 		font-weight: bold;
@@ -145,10 +157,10 @@ import TechStacks from '../components/TechStacks.astro';
 		border-radius: 4px;
 		padding: 0.3em 0.4em;
 	}
-
 	.instructions strong {
 		color: rgb(var(--accent-light));
 	}
+
 
 	.link-card-grid {
 		display: grid;
@@ -156,23 +168,18 @@ import TechStacks from '../components/TechStacks.astro';
 		gap: 2rem;
 		padding: 0;
 	}
+	
+.clock-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
 
-	.clock-container {
-		display: flex;
-		justify-content: center;
-		margin-top: 20px;
-	}
+		@media (min-width: 3800px) {
+ .full-width {
+	width: 100% !important;
+ }
+}
 
-	@media (max-width: 768px) {
-		.full-width {
-			width: 100% !important;
-			margin-left: 0 !important;
-		}
-	}
 
-	@media (min-width: 3800px) {
-		.full-width {
-			width: 100% !important;
-		}
-	}
 </style>
